@@ -1,0 +1,102 @@
+body {
+    font-family: helvetica, arial, sans-serif;
+    margin: 2em;
+    color: #3D3D3D;
+}
+
+h1 {
+    font-style: italic;
+    color: #FF6F00;
+}
+
+video {
+    display: block;
+    width: 80%;
+    /* Mengubah ukuran video menjadi lebih besar */
+    max-width: 800px;
+    /* Maksimum lebar untuk video */
+    height: auto;
+    /* Menyesuaikan tinggi secara otomatis */
+    border-radius: 15px;
+    /* Menambahkan sudut melengkung */
+    margin: 0 auto;
+    /* Memusatkan video */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Menambahkan bayangan untuk efek estetika */
+    border: 5px solid #FF6F00;
+    /* Menambahkan garis tepi dengan warna tombol */
+}
+
+section {
+    opacity: 1;
+    transition: opacity 500ms ease-in-out;
+}
+
+.removed {
+    display: none;
+}
+
+.invisible {
+    opacity: 0.2;
+}
+
+.camView {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 800px;
+    /* Sesuaikan dengan lebar maksimum video */
+    margin: 10px auto;
+    /* Memusatkan camView */
+    cursor: pointer;
+}
+
+.camView p {
+    position: absolute;
+    padding: 5px;
+    background-color: rgba(255, 111, 0, 0.85);
+    color: #FFF;
+    border: 1px dashed rgba(255, 255, 255, 0.7);
+    z-index: 2;
+    font-size: 12px;
+    text-align: center;
+}
+
+.highlighter {
+    position: absolute;
+    background: rgba(0, 255, 0, 0.25);
+    border: 1px dashed #fff;
+    z-index: 1;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFF;
+    background-color: #FF6F00;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Menambahkan bayangan */
+    transition: background-color 300ms ease, transform 200ms ease;
+    /* Transisi untuk efek hover */
+    margin: 20px auto;
+    /* Margin agar tombol tidak terlalu dekat dengan elemen lainnya */
+}
+
+button:hover {
+    background-color: #E65C00;
+    /* Warna saat tombol di-hover */
+    transform: scale(1.05);
+    /* Sedikit memperbesar tombol saat di-hover */
+}
+
+button:active {
+    background-color: #D45500;
+    /* Warna saat tombol di-klik */
+    transform: scale(0.95);
+    /* Sedikit memperkecil tombol saat di-klik */
+}
